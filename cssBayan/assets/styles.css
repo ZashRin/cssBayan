@@ -27,16 +27,8 @@
     color: #00f;
 }
 
-.accordion:hover .meme-container:first-child {
-    color: #000;
-}
-
 .accordion:hover span::before {
     content: '+';
-}
-
-.accordion:hover .meme-container:first-child span::before {
-    content: 'x';
 }
 
 .memes {
@@ -47,35 +39,47 @@
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    align-items: center;
 }
 
 .meme-container {
     flex-shrink: 0;
-    width: 150px;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.meme-container > img {
+.meme-container > .meme-img {
     width: 150px;
     display: none;
 }
 
-.meme-container:first-child > img {
+.meme-input:checked + .meme-img {
     display: block;
 }
 
-.meme-container:hover {
+.meme-input:checked + .meme-label {
     color: #000;
 }
 
-.meme-container:hover > img {
+.meme-input:checked + span::before {
+    content: 'x';
+}
+
+.meme-label{
+    display: flex;
+    flex-direction: column;
+}
+
+.meme-label:hover {
+    color: #000;
+}
+
+.meme-label:hover .meme-img {
     display: block;
 }
 
-.meme-container:hover span::before {
+.meme-label:hover span::before {
     content: 'x';
 }
 
