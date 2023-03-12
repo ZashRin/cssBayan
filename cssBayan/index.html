@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
     <title>cssBayan</title>
   </head>
   <body>
@@ -11,21 +12,63 @@
       <h1 class="visuallyhidden">cssBayan</h1>
     </header>
     <main>
-      <div class="memes">
-        <div id="meme-1">
-          <p>Pepe the Frog</p>
-        </div>
-        <div id="meme-2">
-          <p>Still same Pepe</p>
-        </div>
-        <div id="meme-3">
-          <p>Pepe still same</p>
-        </div>
-        <div id="meme-4">
-          <p>Pepe stays the same</p>
-        </div>
-        <div id="meme-5">
-          <p>Pepe again</p>
+      <div class="accordion">
+        <div class="memes">
+          <div class="meme-container">
+            <label for="meme-1">Pepe the Frog<span>+</span></label>
+            <input
+              type="checkbox"
+              class="meme-input"
+              id="meme-1"
+              checked
+              hidden
+            />
+            <img src="./assets/images/pepe.jpg" alt="pepe" />
+          </div>
+          <div class="meme-container">
+            <label for="meme-2">Still same Pepe<span>+</span></label>
+            <input
+              type="checkbox"
+              class="meme-input"
+              id="meme-2"
+              checked
+              hidden
+            />
+            <img src="./assets/images/pepe2.jpg" alt="pepe" />
+          </div>
+          <div class="meme-container">
+            <label for="meme-3">Pepe still same<span>+</span></label>
+            <input
+              type="checkbox"
+              class="meme-input"
+              id="meme-3"
+              checked
+              hidden
+            />
+            <img src="./assets/images/pepe3.jpeg" alt="pepe" />
+          </div>
+          <div class="meme-container">
+            <label for="meme-4">Pepe stays the same<span>+</span></label>
+            <input
+              type="checkbox"
+              class="meme-input"
+              id="meme-4"
+              checked
+              hidden
+            />
+            <img src="./assets/images/pepe4.jpg" alt="pepe" />
+          </div>
+          <div class="meme-container">
+            <label for="meme-5">Pepe again<span>+</span></label>
+            <input
+              type="checkbox"
+              class="meme-input"
+              id="meme-5"
+              checked
+              hidden
+            />
+            <img src="./assets/images/pepe5.jpg" alt="pepe" />
+          </div>
         </div>
       </div>
     </main>
