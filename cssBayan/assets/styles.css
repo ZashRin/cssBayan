@@ -25,6 +25,7 @@
 
 .accordion:hover {
     color: #00f;
+    cursor: pointer;
 }
 
 .accordion:hover span::before {
@@ -66,13 +67,14 @@
     content: 'x';
 }
 
-.meme-label{
+.meme-label {
     display: flex;
     flex-direction: column;
 }
 
 .meme-label:hover {
     color: #000;
+    cursor: pointer;
 }
 
 .meme-label:hover .meme-img {
