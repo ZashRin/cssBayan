@@ -40,15 +40,19 @@
 }
 
 .memes {
-    display: flex;
+    width: 100%;
     height: 75vh;
+    font-size: 14px;
+    text-align: initial;
+    display: flex;
     flex-direction: column;
     gap: 5vh;
+    align-items: center;
 }
 
 .meme-container {
     flex-shrink: 0;
-    width: fit-content;
+    width: 150px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -57,14 +61,6 @@
 .meme-container > img {
     width: 150px;
     display: none;
-}
-
-.memes {
-    width: 100%;
-    position: relative;
-    top: 31%;
-    font-size: 16px;
-    text-align: initial;
 }
 
 .meme-container:first-child > img {
