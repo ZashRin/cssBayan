@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.visuallyhidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.accordion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+.accordion:hover {
+    color: blue;
+}
+
+.memes {
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.meme-container {
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.meme-container > img {
+    width: 150px;
+    display: none;
+}
+
+.memes {
+    width: 100%;
+    position: relative;
+    top: 31%;
+    font-size: 16px;
+    text-align: initial;
+}
+
+.meme-container:first-child > img {
+    display: block;
+}
+
+.meme-container:first-child span::before {
+    content: 'x';
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #939496, #595a69);
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+main {
+    width: 50%;
+}
+
+.copyright {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
